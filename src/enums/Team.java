@@ -1,5 +1,5 @@
 package enums;
 
 public enum Team {
-	Liverpool, ManUnited, RealMadrid
+	Liverpool, ManUnited, RealMadrid, Barcelona
 }

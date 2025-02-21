@@ -11,6 +11,15 @@ public class Midfielder extends BasePlayer implements CanDefend, CanAttack {
 		
 	}
 	public void attack(BasePlayer b) {
-		
+		if(b instanceof Defender) {
+			midfielderSkill();
+		}else if(b instanceof Midfielder) {
+			
+		}else if(b instanceof Forward) {
+			
+		}
+	}
+	public void midfielderSkill() {
+		// area damage
 	}
 }

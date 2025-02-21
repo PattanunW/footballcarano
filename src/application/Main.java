@@ -27,11 +27,7 @@ public class Main extends Application {
 		// inventory test
 		Inventory inventory = new Inventory();
 		inventory.add(maguire);
-		System.out.println(inventory.toString());
-		// shop test
-		Shop shop = new Shop();
-		shop.generateShop();
-		System.out.println(shop.toString());*/
+		System.out.println(inventory.toString());*/
         GridPane gridPane = new GridPane();
         gridPane.setMinSize(400, 200); 
         Button button1 = new Button("Button 1");
