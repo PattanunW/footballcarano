@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("SceneBuilder.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("src/application/SceneBuilder.fxml"));
 
 			primaryStage.setTitle("Football Carano");
         	primaryStage.setScene(new Scene (root));
