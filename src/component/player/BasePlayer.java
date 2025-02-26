@@ -54,5 +54,10 @@ public class BasePlayer {
 	public void setCoin(int coin) {
 		this.coin = coin;
 	}
+	public void takeDamage(int damage) {
+		// TODO Auto-generated method stub
+		setHealth(getHealth()-damage);
+		
+	}
 	
 }

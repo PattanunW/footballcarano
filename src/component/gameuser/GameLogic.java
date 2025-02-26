@@ -1,7 +1,11 @@
 package component.gameuser;
 
 import component.player.BasePlayer;
+import component.player.Defender;
+import component.player.Forward;
 import component.player.Maguire; // example player, add others like Defenders, Midfielders, Forwards
+import component.player.Midfielder;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -87,11 +91,11 @@ public class GameLogic {
         int damage = attacker.getAttack() - defender.getDefense();
         
         // Add type advantage modifiers
-        if (attacker.getType() == "Defender" && defender.getType() == "Forward") {
+        if (attacker instanceof Defender && defender instanceof Forward) {
             damage *= 1.5; // Defender > Forward
-        } else if (attacker.getType() == "Midfielder" && defender.getType() == "Defender") {
+        } else if (attacker instanceof Midfielder && defender instanceof Defender) {
             damage *= 1.5; // Midfielder > Defender
-        } else if (attacker.getType() == "Forward" && defender.getType() == "Midfielder") {
+        } else if (attacker instanceof Forward && defender instanceof Midfielder) {
             damage *= 1.5; // Forward > Midfielder
         }
 
