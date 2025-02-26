@@ -2,11 +2,11 @@ package component.player;
 
 import enums.Team;
 
-public class Mendy extends Defender {
-	public Mendy() {
+public class Zidane extends Midfielder{
+	public Zidane() {
 		super(100,20,70); // not final
-		super.setName("Mendy");
+		super.setName("Zidane");
 		super.setTeam(Team.RealMadrid);
-		super.setCoin(2);
+		super.setCoin(5);
 	}
 }
